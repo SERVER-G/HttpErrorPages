@@ -4,10 +4,26 @@
     <!-- Simple HttpErrorPages | MIT License | https://github.com/HttpErrorPages -->
     <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><%= vars.pagetitle %></title>
-    <style type="text/css"><%- vars.inlinecss %></style>
+<!--     <style type="text/css"><%- vars.inlinecss %></style> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="cover"><h1><%= vars.title %> <small><%= vars.code %></small></h1><p class="lead"><%= vars.message %></p></div>
-    <% if (vars.footer){ %><footer><p><%- vars.footer %></p></footer><% } %>
+    <h1>
+    <%= vars.code %>
+    </h1>
+    <div class="cloak__wrapper">
+      <div class="cloak__container">
+        <div class="cloak"></div>
+      </div>
+    </div>
+    <div class="info">
+      <h2><%= vars.title %></h2>
+      <h2><%= vars.message %></h2>
+      <p>
+        <%= vars.message_2 %>
+      </p>
+    </div>
+    <script  src="./script.js"></script>
 </body>
 </html>

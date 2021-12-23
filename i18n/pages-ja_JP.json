@@ -1,0 +1,98 @@
+{        
+    // STANDARD ERROR CODES
+    // =======================================================
+
+    "400": {
+        "title": "Bad Request",
+        "message": "クライアントエラーにより、サーバーがリクエストを処理できませんでした。",
+        "message_2": "やり直してみるといいかもしれません。"
+    },
+    "401": {
+        "title": "Unauthorized",
+        "message": "アクセス権が無い、または認証に失敗しました。",
+        "message_2": "アカウントを間違えてはいませんか？"
+    },
+
+    "403": {
+        "title": "Access Denied",
+        "message": "アクセス権・閲覧権が無い、または認証に失敗しました。",
+        "message_2": "あなたはこのページにアクセスすることはできません。"
+    },
+    
+    // http 404 not found
+    "404": {
+        "title": "Resource not found",
+        "message": "ページが見つかりませんでした。",
+        "message_2": "データが存在していないようです。URLが間違っているかもしれません。"
+    },
+
+    "408": {
+        "title": "Request Timeout",
+        "message": "時間が長すぎるためリクエストが完了できませんでした。",
+        "message_2": "回線速度や処理速度が低下した際に起こりやすいです。"
+    },
+
+    "415": {
+        "title": "Unsupported Media Type",
+        "message": "データ形式がサーバーに対応していないため拒否されました。",
+        "message_2": "サポートしているデータ形式を使用してください。"
+    },
+
+    "429": {
+        "title": "Too Many Requests",
+        "message": "アクセス数が多いため、制限されました。",
+        "message_2": "数秒・数分待ってから接続してください。"
+    },
+    
+    // internal server error
+    "500": {
+        "title": "Webservice currently unavailable",
+        "message": "予期しないエラーが発生しました。",
+        "message_2": "サーバーで異常が発生し正常なレスポンスを返せませんでした。"
+    },
+    
+    // unknown http method
+    "501": {
+        "title": "Not Implemented",
+        "message": "サーバーがリクエストを処理するための必要な機能がありません。",
+        "message_2": "もう一度やり直してみてください。"
+    },
+    
+    // http proxy forward error
+    "502": {
+        "title": "Webservice currently unavailable",
+        "message": "ゲートウェイ・プロキシサーバが不正・無効なリクエストを受信しました。",
+        "message_2": "後ほどまた試してみてください"
+    },
+    
+    // webserver service error
+    "503": {
+        "title": "Webservice currently unavailable",
+        "message": "サーバーは現在、このリクエストを処理することはできません。",
+        "message_2": "一時的にサーバーがダウン、またはメンテナンス中かもしれません。"
+    },
+    
+    // CUSTOM ERROR CODES
+    // =======================================================
+
+    // webserver origin error
+    "520": {
+        "title": "Origin Error - Unknown Host",
+        "message": "Webサーバーに接続できません。",
+        "message_2": "エラー"
+    },
+    
+    // webserver down error
+    "521": {
+        "title": "Webservice currently unavailable",
+        "message": "Webサーバーに問題があるため正常に接続できません。",
+        "message_2": "エラー"
+    },
+    
+    // maintenance
+    "533": {
+        "title": "Scheduled Maintenance",
+        "message": "このサイトは現在、メンテナンス中のため接続できません。",
+        "message_2": "エラー"
+    }
+}

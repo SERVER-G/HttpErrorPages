@@ -9,6 +9,7 @@
         "docs": "node bin/generator.js static docs/config.json --out=docs",
         "dist": "node bin/generator.js static config-dist.json --out=dist; tar -cf dist/pages.tar dist/*.html",
         "static": "node bin/generator.js static",
+        "static-jp": "npm run static -- --lang ja_JP",
         "gulp": "gulp"
     },
     "keywords": [
